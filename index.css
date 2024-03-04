@@ -47,10 +47,12 @@
         }
 
         button {
-            background-color: #3498db;
+            background-color: #31ec69;
             color: #fff;
-            padding: 10px 15px;
+            padding: 4px 15px;
             border: none;
             cursor: pointer;
             font-size: 16px;
+            border-radius: 1rem;
+            
         }
