@@ -4,109 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weekend Vibe</title>
-    <link rel="stylesheet" href="styles.css">
-
 
     <style>
-        /* Resetting default browser styles */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #dfe7ee; 
-}
+        /* Reset default browser styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #dfe7ee; 
+        }
 
-/* Navbar styles */
-.navbar {
-    background-color: #4206e6; 
-    padding: 10px;
-    text-align: center;
-}
+        /* Navbar styles */
+        .navbar {
+            background-color: #4206e6; 
+            padding: 10px;
+            text-align: center;
+        }
 
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
 
-.navbar ul li {
-    display: inline; 
-    margin-right: 20px;
-}
+        .navbar ul li {
+            display: inline; 
+            margin-right: 20px;
+        }
 
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 8px 16px;
-    background-color: #11df22; 
-    border-radius: 5px;
-}
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 16px;
+            background-color: #11df22; 
+            border-radius: 5px;
+        }
 
-.navbar ul li a:hover {
-    background-color: #0d31d4; /* Change color on hover */
-}
+        .navbar ul li a:hover {
+            background-color: #0d31d4; 
+        }
 
-/* Main content styles */
-.main-content {
-    text-align: center;
-    padding: 50px;
-    background-color: #fafafa;
-}
+        /* Main content styles */
+        .main-content {
+            text-align: center;
+            padding: 50px;
+            background-color: #fafafa;
+        }
 
-.content-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
 
-.text-section {
-    flex: 1;
-    text-align: left;
-    padding: 20px;
-}
+        .text-section {
+            flex: 1;
+            text-align: left;
+            padding: 20px;
+        }
 
-.text-section h1 {
-    color: #333;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
+        .text-section h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
 
-.text-section p {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 20px;
-}
+        .text-section p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
 
-/* Image section */
-.image-section {
-    flex: 1;
-}
+        /* Image section */
+        .image-section {
+            flex: 1;
+        }
 
-.vehicle-image {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+        .vehicle-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
 
-/* Footer styles */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+        /* Vehicle Grid Section */
+        .vehicle-grid {
+            padding: 30px 20px;
+            background-color: #f4f4f4;
+            margin-bottom: 40px;
+        }
 
+        .vehicle-grid h2 {
+            text-align: center;
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .vehicle-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .vehicle-card img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .vehicle-card h3 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .vehicle-card p {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
     </style>
 </head>
 
@@ -126,18 +173,49 @@ footer {
     <!-- Main Content -->
     <div class="main-content">
         <div class="content-container">
-            <!-- Text Section -->
+      
             <div class="text-section">
                 <h1>Welcome to the Weekend Vibe!</h1>
                 <p>Get ready to fuel your weekend with awesome vibes. Explore the best events, places, and rides. Make every weekend count!</p>
             </div>
 
-            <!-- Image -->
+        
             <div class="image-section">
                 <img src="https://visitnairobikenya.com/wp-content/uploads/2024/02/matatu-1024x1024.jpg" alt="Vehicle for Weekend Adventures" class="vehicle-image">
             </div>
         </div>
     </div>
+
+    <!-- availabe vehicle Section -->
+    <section class="vehicle-grid">
+        <h2>Available Vehicles for Booking</h2>
+        <div class="grid-container">
+      
+            <div class="vehicle-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ2-gkT6MXEy9Ge1sD6JWXcZQHBFln1Zjfwg&s" alt="SUV">
+                <h3>SUV</h3>
+                <p>Spacious and comfortable, perfect for family trips.</p>
+            </div>
+           
+            <div class="vehicle-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy1DKQ6T7gL5f6Pd236fZI4WBXbcH6LBfCgw&s" alt="Motorbike">
+                <h3>Motorbike</h3>
+                <p>For the adventurous solo traveler.</p>
+            </div>
+        
+            <div class="vehicle-card">
+                <img src="https://platform.cstatic-images.com/large/in/v2/stock_photos/e74b9fc3-5d68-4746-a779-91b3d7f7bf0b/662ad619-8301-4c97-bb4e-0d7775cde919.png" alt="Sedan">
+                <h3>Sedan</h3>
+                <p>Ideal for business trips and city commutes.</p>
+            </div>
+      
+            <div class="vehicle-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHL_61QravISvaI0X9nFqDvid5eFLLHU3nxA&s" alt="Van">
+                <h3>Van</h3>
+                <p>Great for group trips and transporting gear.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
