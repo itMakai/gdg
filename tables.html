@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booked Vehicles - Weekend Vibe</title>
+  <style>
+    /* table styling */
+    table {
+      width: 90%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Styling for table headers */
+    th {
+      background-color: #FF6F61;
+      color: white;
+      padding: 12px;
+    }
+
+    /* Styling for table rows */
+    td {
+      padding: 12px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    /* Alternate row colors */
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* Hover effect on table rows */
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Styling the table caption */
+    caption {
+      margin-bottom: 10px;
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #FF6F61;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption>Weekend Vibe - Booked Vehicles</caption>
+    <thead>
+      <tr>
+        <th>Booking ID</th>
+        <th>Vehicle Model</th>
+        <th>Booked By</th>
+        <th>Booking Date</th>
+        <th>Pickup Location</th>
+        <th>Rental Duration (Days)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>WV-001</td>
+        <td>Van</td>
+        <td>Emily Watson</td>
+        <td>2024-10-25</td>
+        <td>Downtown</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>WV-002</td>
+        <td>motorbike</td>
+        <td>John Doe</td>
+        <td>2024-10-26</td>
+        <td>Airport Terminal</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>WV-003</td>
+        <td>Suv</td>
+        <td>Sarah Lee</td>
+        <td>2024-10-27</td>
+        <td>City Center</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>WV-004</td>
+        <td>Sedan</td>
+        <td>Michael Smith</td>
+        <td>2024-10-28</td>
+        <td>Beach Front</td>
+        <td>5</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="6">Total Bookings: 4</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>
